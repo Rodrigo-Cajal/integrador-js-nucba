@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/img/logo-atlas.svg" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <link rel="stylesheet" href="../assets/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Atlas Basketball Shoes</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header>
+      <a href="index.html">
+        <img src="./assets/img/logo-atlas.svg" alt="Logo Atlas" class="logo" />
+      </a>
+      <span class="menu-icon" onclick="toggleNavbar()">&#9776;</span>
+
+      <nav class="navbar" id="navbar">
+        <ul class="navbar-list">
+          <li>
+            <a href="#inicio" class="navbar-link">Inicio</a>
+          </li>
+          <li>
+            <a href="#nosotros" class="navbar-link">Nosotros</a>
+          </li>
+          <li>
+            <a href="#products" class="navbar-link">Productos</a>
+          </li>
+          <li>
+            <a href="#contacto" class="navbar-link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="cart-label">
+        <i class="fa-solid fa-cart-shopping cart-icon">
+          <div class="cart-bubble">0</div>
+        </i>
+      </div>
+
+      <div class="cart">
+        <h2>Productos</h2>
+
+        <div class="cart-container"></div>
+
+        <span class="divider"></span>
+
+        <div class="cart-total">
+          <p>Total:</p>
+          <span class="total"></span>
+        </div>
+        <button class="btn-buy">Comprar</button>
+        <button class="btn-delete">Vaciar carrito</button>
+      </div>
+    </header>
+
+    <!-- Main -->
+
+    <main class="main" id="inicio">
+      <div id="mainsectionuno" class="main__section--uno">
+        <h1 class="texto-uno">Atlas<span class="typewriter"></span></h1>
+        <h2 class="texto-dos">¡Eleva tu juego con estilo y rendimiento!</h2>
+        <p class="texto-tres">
+          Descubre la selección imparable de zapatillas de baloncesto en Atlas
+          Basketball Shoes, donde la excelencia en calzado se encuentra con tu
+          pasión por el basket.
+        </p>
+        <button class="boton-contacto">
+          <a href="#products" class="main-btn">Ver productos</a>
+        </button>
+      </div>
+      <div id="mainsectiondos" class="main__section--dos">
+        <img
+          src="../assets/img/lebron-main.png"
+          alt="main-img"
+          class="main__img"
+        />
+      </div>
+    </main>
+
+    <!-- Sobre nosotros -->
+    <div class="sobre-nosotros" id="nosotros">
+      <h2 class="subt-section">Sobre nosotros</h2>
+      <section class="feature-cards">
+        <div class="feature-card">
+          <img
+            src="../assets/img/luka-uno.PNG"
+            alt="Selección Curada de Alta Calidad"
+            class="feature-logo"
+          />
+          <div class="feature-subtitle">Selección de Alta Calidad</div>
+          <div class="feature-description">
+            Nuestros productos están cuidadosamente seleccionados para ofrecerte
+            productos de alta calidad que se ajusten a tus necesidades de juego
+            y estilo.
+          </div>
+        </div>
+        <div class="feature-card">
+          <img
+            src="../assets/img/pg-6-hotw.jpg"
+            alt="Experiencia Especializada"
+            class="feature-logo"
+          />
+          <div class="feature-subtitle">Experiencia Especializada</div>
+          <div class="feature-description">
+            Cualquier detalle que necesites acorde a tus características,
+            nuestros especialistas están aquí para ayudarte a tomar decisiones
+            informadas.
+          </div>
+        </div>
+        <div class="feature-card">
+          <img
+            src="../assets/img/tatum-denim.jpeg"
+            alt="Compromiso con la Excelencia del Cliente"
+            class="feature-logo"
+          />
+          <div class="feature-subtitle">Compromiso con el Cliente</div>
+          <div class="feature-description">
+            Estamos comprometidos a brindarte un servicio de alta calidad que
+            refleje nuestro compromiso con los clientes apasionados por el
+            baloncesto.
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Productos -->
+    <section id="products">
+      <h2>Productos</h2>
+
+      <div class="categories">
+        <button class="category active">Todo</button>
+        <button class="category" data-category="Nike">Nike</button>
+        <button class="category" data-category="Jordan">Jordan</button>
+      </div>
+
+      <!-- products -->
+      <div class="products-container"></div>
+      <button class="btn-load">Ver Más</button>
+    </section>
+    <!-- Contacto -->
+    <section class="contacto" id="contacto">
+      <h2 id="contactoh2" class="contactoh2">Contacto</h2>
+      <div id="contactocont" class="contacto__container contactocont">
+        <section class="contacto__section--dos">
+          <h3>
+            ¿Tienes preguntas sobre nuestros productos o el proceso de compra?
+          </h3>
+          <p>
+            ¡No dudes en utilizar nuestro formulario de contacto! Estamos aquí
+            para ayudarte en cada paso del camino. Nuestro equipo se compromete
+            a atender tus consultas con prontitud y brindarte toda la
+            información que necesitas. ¡Tu satisfacción es nuestra prioridad!
+            Completa el formulario y te contactaremos en breve para resolver
+            todas tus inquietudes.
+          </p>
+        </section>
+        <div id="contactouno" class="contacto__section--uno">
+          <form class="form__container" id="register-form" novalidate>
+            <h3 class="form__title">Formulario de consulta</h3>
+            <div class="form__field">
+              <span>Nombre</span>
+              <input
+                type="text"
+                class="form__input"
+                id="name"
+                autocomplete="off"
+              />
+              <small></small>
+            </div>
+            <div class="form__field">
+              <span>Apellido</span>
+              <input
+                type="text"
+                class="form__input"
+                id="lastName"
+                autocomplete="off"
+              />
+              <small></small>
+            </div>
+            <div class="form__field">
+              <span>Email</span>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                autocomplete="off"
+              />
+              <small></small>
+            </div>
+            <div class="form__field">
+              <span>Teléfono</span>
+              <input
+                type="text"
+                class="form__input"
+                id="phone"
+                autocomplete="off"
+              />
+              <small></small>
+            </div>
+            <input type="submit" class="form__submit__btn" value="Enviar" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <p>Copyright © 2023 Atlas Basketball Shoes.</p>
+        <div class="footer-img">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-whatsapp"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+              <path
+                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"
+              /></svg
+          ></a>
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-facebook"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+              /></svg
+          ></a>
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-instagram"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+              />
+              <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+              <path d="M16.5 7.5l0 .01" /></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <div class="add-modal"></div>
+    <script src="../assets/data.js"></script>
+    <script src="../assets/form.js"></script>
+    <script src="../assets/cart.js"></script>
+    <script src="../assets/scroll.js"></script>
+    <script src="../assets/products.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
