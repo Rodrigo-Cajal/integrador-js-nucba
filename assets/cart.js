@@ -26,18 +26,7 @@ const toggleNavbar = () => {
   }
 };
 
-const closeCartOnScroll = () => {
-  if (!cartMenu.classList.contains("open-cart")) return;
 
-  cartMenu.classList.remove("open-cart");
-
-};
-
-const closeMenuOnScroll = () => {
-  if (!navbar.classList.contains("show")) return;
-
-  navbar.classList.remove("show");
-};
 
 const createCartProductTemplate = (cartProduct) => {
   const { id, name, price, image, quantity } = cartProduct;
