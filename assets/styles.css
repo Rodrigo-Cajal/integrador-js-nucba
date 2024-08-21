@@ -254,7 +254,6 @@ header {
   display: flex;
   justify-content: space-around;
   padding-top: 110px;
-  padding-bottom: 100px;
 }
 
 .main__section--uno {
@@ -347,7 +346,7 @@ header {
 }
 
 .main__img {
-  height: 720px;
+  height: 820px;
 }
 
 /* Sobre Nosotros */
@@ -761,7 +760,7 @@ input:-webkit-autofill {
 /* Pc chica */
 @media (max-width: 1680px) {
   .main__img {
-    height: 420px;
+    height: 820px;
   }
   .texto-tres {
     width: 92%;
